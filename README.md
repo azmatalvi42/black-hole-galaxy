@@ -1,38 +1,41 @@
-# black-hole-galaxy
+# 🌌 Galaxy Generator + Black Hole Visualizer  
+Built with Three.js, GSAP, and Postprocessing  
 
-Galaxy Generator with Black Hole Gravity
-Built with Three.js + GSAP + Unreal Bloom
+This started as a simple galaxy particle generator and evolved into a fully interactive, animated scene — complete with a glowing black hole that sucks in stars from all directions.
 
-This is a personal creative experiment where I built an interactive galaxy simulator in Three.js, and took it a step further with a black hole that pulls in stars dynamically. All of it is customizable through a live GUI.
+Everything is tweakable live through a GUI. It's like building a little sci-fi universe from scratch with sliders.
 
-I wanted something that felt alive and reactive — inspired by space games, data cores, and those trippy visuals you’d see in sci-fi UIs.
+## ✨ Features
 
-🔧 What You Can Do
-Generate millions of particles that form spiraling galaxy arms
+- Procedurally generated galaxy with adjustable:
+  - Star count
+  - Radius
+  - Spin
+  - Branches
+  - Randomness
+  - Inside and outside colors
+- Black hole animation that simulates gravity using directional force
+- Toggleable camera animation (warp jump into the black hole core)
+- Glowing crystal core using physical material and bloom
+- Organized GUI with separate folders for galaxy, colors, and black hole controls
+- Fog, bloom, and tone mapping for that cinematic glow
 
-Adjust galaxy settings like spin, branches, randomness, and radius
+## 🎮 Controls
 
-Toggle a black hole that sucks in stars from all directions using force-based movement
+Open the GUI and adjust values in real-time:
+- `Galaxy Settings`: Particle count, shape, randomness
+- `Colors`: Inside and outside color of the galaxy
+- `Black Hole Controls`: Trigger warp jump or activate black hole gravity mode
 
-Switch colors in real-time using GUI controls
+## 📦 Stack
 
-Trigger a warp jump camera animation into the black hole’s core
+- [Three.js](https://threejs.org/)
+- [GSAP](https://greensock.com/gsap/)
+- [lil-gui](https://lil-gui.georgealways.com/)
+- [EffectComposer + UnrealBloomPass](https://threejs.org/docs/#examples/en/postprocessing/UnrealBloomPass)
 
-Add cinematic vibes with UnrealBloomPass, fog, glow, and ACES tone mapping
+## 🧪 To Run
 
-🧠 Tech Stack
-Three.js
-
-GSAP for camera animations
-
-lil-gui for live controls
-
-Postprocessing (EffectComposer + UnrealBloomPass)
-
-🚀 Getting Started
-bash
-Copy
-Edit
+```bash
 npm install
 npm run dev
-Note: You’ll need to use a local server (like Vite or Live Server) to run this — WebGL needs it.
